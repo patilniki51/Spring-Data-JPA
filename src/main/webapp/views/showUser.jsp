@@ -9,8 +9,7 @@
 <body>
 	<div>
 		<h4> User Details:</h4>
-		<br>
-		<h5>${user.getId() and ${user.getUsername()}</h5>
+		<h5>${user.getId()} and ${user.getUsername()}</h5>
 	</div>
 </body>
 </html>

@@ -6,8 +6,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.spring.jpa.dao.UserRepo;
-
 @Controller
 public class UserController {
 	
@@ -21,7 +19,7 @@ public class UserController {
 	}
 	
 	@RequestMapping("/getUser")
-	public String getUser(@RequestParam int id, Model m) {
+	public String getUser(@RequestParam("uid") int id, Model m) {
 		m.addAttribute("user",repo.getOne(id));
 		return "showUser";
 	}

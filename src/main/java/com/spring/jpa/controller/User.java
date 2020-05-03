@@ -1,7 +1,6 @@
-package com.spring.jpa.model;
+package com.spring.jpa.controller;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import org.springframework.stereotype.Component;
@@ -11,27 +10,25 @@ import org.springframework.stereotype.Component;
 public class User {
 	
 	@Id
-	@GeneratedValue
-	private int uid;
+	private int id;
 	private String username;
 	private String password;
-	
 	
 	public User() {
 	}
 	
-	public User(int uid, String username, String password) {
+	public User(int id, String username, String password) {
 		super();
-		this.uid = uid;
+		this.id = id;
 		this.username = username;
 		this.password = password;
 	}
 
-	public int getUid() {
-		return uid;
+	public int getId() {
+		return id;
 	}
-	public void setUid(int uid) {
-		this.uid = uid;
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getUsername() {
 		return username;
@@ -47,7 +44,7 @@ public class User {
 	}
 	@Override
 	public String toString() {
-		return "User [uid=" + uid + ", username=" + username + ", password=" + password + "]";
+		return "User [id=" + id + ", username=" + username + ", password=" + password + "]";
 	}
 	
 }
