@@ -1,6 +1,7 @@
 package com.spring.jpa.controller;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import org.springframework.stereotype.Component;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Component;
 public class User {
 	
 	@Id
+	@GeneratedValue
 	private int id;
 	private String username;
 	private String password;
