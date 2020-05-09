@@ -18,6 +18,7 @@
 		      #fedcd2 75%,
 		      #df744a 75%
 		    );
+		    background-attachment:fixed;
 			color:black;
 			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 		}
@@ -69,6 +70,11 @@
 		/*background:linear-gradient(to right, #9FEDD7 -30%, #FEF9C7 30%, #FCE181 60%);*/
 		background-color: transparent;
 	}
+	
+	a{
+		text-align:right;
+		color: red;
+	}
 </style>
 </head>
 <body>	
@@ -88,5 +94,7 @@
 		</table>
 	
 	</div>
+	
+	<a href="home">Go to Home</a>
 </body>
 </html>

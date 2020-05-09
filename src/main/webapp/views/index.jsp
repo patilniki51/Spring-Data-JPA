@@ -18,6 +18,7 @@
 		      #fedcd2 75%,
 		      #df744a 75%
 		    );
+		    background-attachment:fixed;
 			color:black;
 			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 		}
@@ -75,10 +76,8 @@
 <body>
 	<h1>Welcome</h1>
 	<div>
-		<form action="getUser">
-			<h3>Enter ID to get User:</h3>
-			<input type="text" name="uid">
-			<input type="submit" value="Get">
+		<form action="getAllUsers">
+			<input type="submit" value="Get All Users">
 		</form>
 	</div>
 	<pre>
@@ -98,8 +97,10 @@
 	
 	</pre>
 	<div>
-		<form action="getAllUsers">
-			<input type="submit" value="Get All Users">
+		<form action="getUser">
+			<h3>Enter ID to get User:</h3>
+			<input type="text" name="uid">
+			<input type="submit" value="Get">
 		</form>
 	</div>
 
