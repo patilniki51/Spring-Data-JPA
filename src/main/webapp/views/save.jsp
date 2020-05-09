@@ -30,9 +30,15 @@ body{
 		}
 		
 		a{
-			text-align:center;
-			color: red;
-		}
+		display:block;
+		float:right;
+		color: white;
+		text-decoration: none;
+		margin: 10px;
+		padding: 10px;
+		border: 3px dotted pink;
+		background-color: black;
+	}
 </style>
 </head>
 <body>	

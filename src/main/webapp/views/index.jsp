@@ -82,19 +82,6 @@
 	</div>
 	<pre>
 	
-	
-	</pre>
-	<div>
-		<form action="addUser" method="post">
-			<h3>Enter the Details:</h3>
-			Username: <input type="text" name="username"><br>
-			Password: <input type="password" name="password">
-			<input type="submit" value="Add">
-		</form>
-	</div>
-	<pre>
-	
-	
 	</pre>
 	<div>
 		<form action="getUser">
@@ -105,7 +92,6 @@
 	</div>
 	<pre>
 	
-	
 	</pre>
 	<div>
 		<form action="getUserByUsername">
@@ -114,6 +100,16 @@
 			<input type="submit" value="Get">
 		</form>
 	</div>
-
+	<pre>
+	
+	</pre>
+	<div>
+		<form action="addUser" method="post">
+			<h3>Enter the Details:</h3>
+			Username: <input type="text" name="username"><br>
+			Password: <input type="password" name="password">
+			<input type="submit" value="Add">
+		</form>
+	</div>
 </body>
 </html>

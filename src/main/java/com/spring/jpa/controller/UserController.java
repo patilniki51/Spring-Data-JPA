@@ -25,9 +25,15 @@ public class UserController {
 		return "showUser";
 	}
 	
+//	@RequestMapping("/getUserByUsername")
+//	public String getUserByUsername(@RequestParam String username, Model m) {
+//		m.addAttribute("user",repo.findByUsername(username));
+//		return "showUserByName";
+//	}
+	
 	@RequestMapping("/getUserByUsername")
 	public String getUserByUsername(@RequestParam String username, Model m) {
-		m.addAttribute("user",repo.findByUsername(username));
+		m.addAttribute("user",repo.find(username));
 		return "showUserByName";
 	}
 	

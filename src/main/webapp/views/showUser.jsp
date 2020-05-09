@@ -59,12 +59,22 @@ body{
 	td:nth-child(2){
 		width:70%;
 	}
-	tr:nth-child(1){
+	tr:nth-child(even){
 		background-color: #D0D3D4;
 	}
+	tr:hover{
+		/*background:linear-gradient(to right, #9FEDD7 -30%, #FEF9C7 30%, #FCE181 60%);*/
+		background-color: transparent;
+	}
 	a{
-		text-align:center;
-		color: red;
+		display:block;
+		float:right;
+		color: white;
+		text-decoration: none;
+		margin: 10px;
+		padding: 10px;
+		border: 3px dotted pink;
+		background-color: black;
 	}
 		
 </style>
