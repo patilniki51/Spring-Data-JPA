@@ -6,11 +6,85 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>User</title>
+<style>
+body{
+			padding:0px;
+			margin:0px;
+			background-image:
+		    linear-gradient(
+		      110deg, 
+		      #bfd8d2,
+		      #bfd8d2 25%,
+		      #fedcd2 25%,
+		      #fedcd2 75%,
+		      #df744a 75%
+		    );
+		    background-attachment:fixed;
+			color:black;
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		}
+		
+		h3{
+			padding:10px;
+			margin:10px;
+			text-align:center;
+		}
+		div{	
+			display: flex;
+			justify-content:center;
+			align-items:center;
+			flex-direction: column;
+		}
+	table{
+		border-collapse:collapse;
+		border-radius: 6px 6px 6px 6px;
+	    -moz-border-radius: 6px 6px 6px 6px;
+	    -webkit-border-radius: 6px 6px 6px 6px;
+	    box-shadow: 0 1px 1px #CCCCCC;
+		padding:10px;
+		margin:10px;
+		width:40%;		
+	}
+	th,td{
+		text-align:left;
+		padding:10px;
+	}
+	th{
+		background-color:#212F3D;
+		color: #ECF0F1 ;
+	}
+	td:nth-child(1){
+		width:30%;
+	}
+	td:nth-child(2){
+		width:70%;
+	}
+	tr:nth-child(1){
+		background-color: #D0D3D4;
+	}
+	a{
+		text-align:center;
+		color: red;
+	}
+		
+</style>
 </head>
 <body>
 	<div>
-		<h4> User Details:</h4>
-		<h5>${user.getId()} and ${user.getUsername()}</h5>
+		<h1>Data of all Users</h1><br/>
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>Username</th>
+			</tr>			
+			<tr>
+				<td>${user.getId()}</td>
+				<td>${user.getUsername()}</td>
+			</tr>
+		</table>
+	
 	</div>
+	
+	<a href="home">Go to Home</a>
 </body>
 </html>

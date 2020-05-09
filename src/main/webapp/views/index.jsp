@@ -99,7 +99,18 @@
 	<div>
 		<form action="getUser">
 			<h3>Enter ID to get User:</h3>
-			<input type="text" name="uid">
+			<input type="text" name="id">
+			<input type="submit" value="Get">
+		</form>
+	</div>
+	<pre>
+	
+	
+	</pre>
+	<div>
+		<form action="getUserByUsername">
+			<h3>Enter Username to get User:</h3>
+			<input type="text" name="username">
 			<input type="submit" value="Get">
 		</form>
 	</div>

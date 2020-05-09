@@ -30,7 +30,7 @@ body{
 		}
 		
 		a{
-			text-align:right;
+			text-align:center;
 			color: red;
 		}
 </style>

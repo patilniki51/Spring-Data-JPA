@@ -72,7 +72,7 @@
 	}
 	
 	a{
-		text-align:right;
+		text-align:center;
 		color: red;
 	}
 </style>
@@ -82,8 +82,8 @@
 		<h1>Data of all Users</h1><br/>
 		<table>
 			<tr>
+				<th>ID</th>
 				<th>Username</th>
-				<th>Email</th>
 			</tr>			
 			<c:forEach var = "u" items = "${users}" >
 			<tr>

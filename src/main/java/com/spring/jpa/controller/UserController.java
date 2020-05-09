@@ -20,9 +20,15 @@ public class UserController {
 	}
 	
 	@RequestMapping("/getUser")
-	public String getUser(@RequestParam("uid") int id, Model m) {
+	public String getUser(@RequestParam int id, Model m) {
 		m.addAttribute("user",repo.getOne(id));
 		return "showUser";
+	}
+	
+	@RequestMapping("/getUserByUsername")
+	public String getUserByUsername(@RequestParam String username, Model m) {
+		m.addAttribute("user",repo.findByUsername(username));
+		return "showUserByName";
 	}
 	
 	@RequestMapping("/getAllUsers")
@@ -33,10 +39,6 @@ public class UserController {
 	
 	@PostMapping("/addUser")
 	public String addUser(Model m, User u) {
-//		User user = new User(u);
-//		user.setId();  
-//		user.setUsername();
-//		user.setPassword();
 		m.addAttribute("user", repo.save(u));
 		return "save";
 	}
