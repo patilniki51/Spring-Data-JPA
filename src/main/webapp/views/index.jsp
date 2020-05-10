@@ -111,5 +111,12 @@
 			<input type="submit" value="Add">
 		</form>
 	</div>
+	<div>
+		<form action="deleteUser">
+			<h3>Enter the ID to delete:</h3>
+			<input type="text" name="id"><br>
+			<input type="submit" value="Delete">
+		</form>
+	</div>
 </body>
 </html>
